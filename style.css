@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 2px dashed grey; */
 }
 main {
   display: flex;
@@ -33,12 +34,12 @@ main {
 
 .logo-image {
   height: 5rem;
-  margin-right: 1rem;
+  /* margin-right: 0rem; */
 }
 
 .logo-title {
-  font-family: "Norse Bold";
-  font-size: 3rem;
+  font-family: Norse;
+  font-size: 4rem;
 }
 
 .image-credit {
@@ -62,6 +63,8 @@ a {
 .main-text {
   font-family: sans-serif;
   padding: 2rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .form-content {
@@ -70,7 +73,14 @@ a {
   flex-flow: row wrap;
   gap: 1rem;
   background-color: #fff;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
+  box-shadow: 0 1px 10px #ccc;
+  
+}
+
+.form-content h3{
+  width: 100%;
+  color: #333
 }
 .form-content > label {
   display: flex;
@@ -79,22 +89,50 @@ a {
   font-weight: bold;
   font-size: 0.5rem;
   letter-spacing: 0.1rem;
+  
 }
 
 .form-content input {
   max-width: 230px;
-  height: 1.5rem;
+  height: 1.7rem;
   border: 2px solid hsl(0, 0%, 95%);
-  border-radius: 5px;
+  border-radius: 4px;
+  margin-right: 2rem;
+  margin-top: 4px;
 }
 
-
-#button-submit{
+#button-submit {
   border: none;
   padding: 10px 40px;
   border-radius: 5px;
   background-color: #3c652f;
   color: #eee;
   font-weight: 550;
-  margin: 2rem;
+  margin: 1rem 0 0 2rem;
+  box-shadow: 5px 5px 2px #bbb;
+  
+}
+
+.log-in{
+  margin-left: 2rem;
+  font-family: sans-serif;
+  font-size: .8rem;
+  font-weight: 550;
+  color: #333;
+}
+.log-in a {
+  text-decoration: none;
+  color: #3c652f;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+input:focus{
+  border: 1px solid rgb(0,128, 255);
+}
+input[type="password"]:invalid{
+  border: 1px solid rgb(192, 0, 0);
+}
+input[type="password"]:valid{
+  border: 1px solid rgb(0,192,0);
 }

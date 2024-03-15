@@ -30,43 +30,56 @@
         <div class="main-text">
           This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams.
-          <br />Sign up now to get started. 
-          <br><br> You <em>know</em> you want to.
+          <br />Sign up now to get started. <br /><br />
+          You <em>know</em> you want to.
         </div>
         <form action="#" class="main-form" method="=post">
-            <div class="form-content">
-          <label for="first-name"
-            >First Name<input
-              type="text"
-              name="first-name"
-              id="first-name"
+          <div class="form-content">
+            <h3>Let's do this!</h3>
+            <label for="first-name"
+              >First Name<input
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="John"
+                required
+            /></label>
+            <label for="last-name"
+              >Last Name<input
+                type="text"
+                name="last-name"
+                id="last-name"
+                required
+                placeholder="Doe"
+            /></label>
+            <label for="user-email"
+              >Email<input required type="email" name="email" id="user-email" placeholder="johndoe@gmail.com"
+            /></label>
+            <label for="phone-number"
+              >Phone Number<input required type="text" placeholder="09xxxxxxxxx" minlength="11" maxlength="11" inputmode="numeric" id="phone-number"
+            /></label>
+            <label for="user-password"
+              >Password<input
+                required
+                type="password"
+                name=""
+                id="user-password"
+                minlength="8"
+                class="error"
+            /></label>
+            <label for="confirm-password"
+              >Confirm Password<input
               required
-          /></label>
-          <label for="last-name"
-            >Last Name<input
-              type="text"
-              name="last-name"
-              id="last-name"
-              required
-          /></label>
-          <label for="user-email"
-            >Email<input required type="email" name="email" id="user-email"
-          /></label>
-          <label for="phone-number"
-            >Phone Number<input required type="text" id="phone-number"
-          /></label>
-          <label for="user-password"
-            >Password<input required type="password" name="" id="user-password"
-          /></label>
-          <label for="confirm-password"
-            >Confirm Password<input
-              type="password"
-              name="confirm-password"
-              id="confirm-password"
-          /></label>
-        </div>
-        <input id="button-submit" type="submit" value="Create Account">
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+            /></label>
+          </div>
+          <input id="button-submit" type="submit" value="Create Account" />
         </form>
+        <div class="log-in">
+          <p>Already have and account? <a href="">Log in</a></p>
+        </div>
       </section>
     </main>
   </body>
